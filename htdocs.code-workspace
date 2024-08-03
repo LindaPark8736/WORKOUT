@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"mysqlOptions": {
+					"authProtocol": "default",
+					"enableSsl": "Disabled"
+				},
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 3306,
+				"driver": "MySQL",
+				"name": "Firstdb",
+				"database": "Firstdb",
+				"username": "Client"
+			}
+		],
+		"files.autoSave": "onFocusChange",
+		"workbench.editor.enablePreview": true,
+		"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+		"editor.codeActionWidget.includeNearbyQuickFixes": true,
+		"editor.largeFileOptimizations": true
+	}
+}

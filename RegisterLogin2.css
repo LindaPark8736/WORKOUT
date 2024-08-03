@@ -1,0 +1,149 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-size: 120%;
+    background:ghostwhite;
+}
+
+/* Login and Register page */
+
+.header {
+    width: 30%;
+    margin: 50px auto auto;
+    color: white;
+    background: #5F9EA0;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0px 20px 20px 20px;
+    font-size: 200%;
+    overflow-wrap: break-word;
+  }
+
+  form, .content {
+    width: 30%;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #B0C4DE;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .input-group {
+    margin: 10px 0px 10px;
+    position: relative;
+  }
+
+  .input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+  }
+
+  .input-group input {
+    height: 3vh;
+    width: 93%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 2rem;
+    background-color: #f8fafc;
+    color: #0d0c22;
+    transition: .5s ease;
+  }
+  
+  .input:focus, input:hover {
+    outline: none;
+    border-color:#5F9EA0;
+    background-color: #fff;
+    box-shadow: 0 0 0 5px rgba(10, 255, 165,0.3);
+  }
+  
+  .icon {
+    position: absolute;
+    left: 0.7%;
+    top: 56%;
+    fill: none;
+    width: 2rem;
+    height: 1rem;
+  }
+
+.input-group button {
+  position: relative;
+  transform: translate(-50%,10%);
+  left: 50%;
+}
+
+button {
+  --primary-color: #5F9EA0;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+  right: 0;
+}
+
+.form-container form .error-msg{
+  text-align: center;
+  display: block;
+  background: crimson;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+} 
+
+
